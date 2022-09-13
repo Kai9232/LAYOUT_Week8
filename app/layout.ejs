@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title><%- title %></title>
+    <!-- Font-awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css">
+    <!-- CSS -->
+    <link rel="stylesheet" href="./assets/style/all.css">
+  </head>
+
+  <body>
+    <nav class="navbar navbar-expand-md bg-light fixed-md-top border-bottom p-0">
+      <div class="container">
+        <div class="d-flex align-items-center w-100 w-md-75">
+          <h1 class="me-auto py-4 py-md-8">
+            <a class="navbar-brand m-0 p-0" href="index.html">NFT藝術家交易平台</a>
+          </h1>
+          <span class="line"></span>
+          <button class="border-0 p-0" type="button">
+            <i class="fa-solid fa-magnifying-glass btn-search d-md-none me-6"></i>
+          </button>
+          <div class="searchBar d-none d-flex align-items-center d-md-flex py-4 p-md-0">
+            <button class="border-0 p-0" type="button">
+              <i class="fa-solid fa-angle-left btn-back d-md-none me-4"></i>
+            </button>
+            <p class="fs-7 lh-18 fs-md-6 lh-md-24 text-dark me-auto ms-md-12">搜尋作品名稱、藝術家名稱</p>
+            <button class="border-0 p-0" type="button">
+              <i class="fa-solid fa-magnifying-glass btn-md-search me-md-12"></i>
+            </button>
+          </div>
+          <button class="navbar-toggler border-0 p-0" type="button">
+            <i class="fa-solid fa-bars menu"></i>
+            <i class="fa-solid fa-xmark close"></i>
+          </button>
+        </div>
+        <div class="navbar-collapse">
+          <ul class="navbar-nav align-items-center">
+            <li><span class="line"></span></li>
+            <li class="nav-item">
+              <a class="d-block fs-5 fs-md-6 fw-bold p-0 py-6 px-md-12" href="artwork.html">探索</a>
+            </li>
+            <li class="border-bottom d-md-none"></li>
+            <li><span class="line"></span></li>
+            <li class="nav-item">
+              <a class="d-block fs-5 fs-md-6 fw-bold p-0 py-6 px-md-12" href="ranking.html">市值</a>
+            </li>
+            <li><span class="line"></span></li>
+            <li class="nav-item pb-6 pb-md-0">
+              <button class="btn btn-primary border w-100 fs-5 text-white d-md-none py-3" type="button" data-bs-toggle="modal" data-bs-target="#link-wallet">連結錢包</button>
+              <button class="d-none d-md-block border-0 p-0 py-md-6 ps-md-10" type="button" data-bs-toggle="modal" data-bs-target="#link-wallet"><i class="fa-solid fa-wallet fs-3"></i></button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <%- contents %>
+
+    <footer class="container-fluid p-0">
+      <div class="border-bottom"></div>
+      <div class="border-bottom border-4 mt-2 mb-6"></div>
+      <p class="font-noto text-center mb-md-4">© ART NFT. All Rights Reserved</p>
+    </footer>
+
+    <!-- Modal -->
+    <div class="modal fade" id="link-wallet" tabindex="-1">
+      <div class="modal-dialog modal-dialog-centered modal-fullscreen-md-down">
+        <div class="modal-content link-wallet">
+          <div class="modal-header justify-content-md-center">
+            <span class="d-md-none h-32px"></span>
+            <h5 class="modal-title fs-4 lh-29" id="exampleModalLabel">連結你的錢包</h5>
+            <button class="d-md-none btn-close mx-0" type="button" data-bs-dismiss="modal"></button>
+          </div>
+          <ul class="modal-body d-block d-md-flex flex-md-wrap px-4 py-6">
+            <li class="link-wallet-item d-flex align-items-center border mb-2 p-3 me-md-2">
+              <img class="h-16px me-4" src="assets/images/logo/connect01.png" alt="MetaMask">
+              <p>MetaMask</p>
+              <i class="fa-sharp fa-solid fa-check text-primary ms-auto"></i>
+            </li>
+            <li class="link-wallet-item d-flex align-items-center border mb-2 p-3">
+              <img class="h-16px me-4" src="assets/images/logo/connect02.png" alt="Coinbase Wallet">
+              <p>Coinbase Wallet</p>
+              <i class="fa-sharp fa-solid fa-check text-primary ms-auto"></i>
+            </li>
+            <li class="link-wallet-item d-flex align-items-center border mb-2 p-3 me-md-2">
+              <img class="h-16px me-4" src="assets/images/logo/connect03.png" alt="WalletConnect">
+              <p>WalletConnect</p>
+              <i class="fa-sharp fa-solid fa-check text-primary ms-auto"></i>
+            </li>
+            <li class="link-wallet-item d-flex align-items-center border mb-2 p-3">
+              <img class="h-16px me-4" src="assets/images/logo/connect04.png" alt="Phantom">
+              <p>Phantom</p>
+              <i class="fa-sharp fa-solid fa-check text-primary ms-auto"></i>
+            </li>
+            <li class="link-wallet-item d-flex align-items-center border mb-2 p-3 mb-md-0 me-md-2">
+              <img class="h-16px me-4" src="assets/images/logo/connect05.png" alt="Glow">
+              <p>Glow</p>
+              <i class="fa-sharp fa-solid fa-check text-primary ms-auto"></i>
+            </li>
+            <li class="link-wallet-item d-flex align-items-center border p-3">
+              <img class="h-16px me-4" src="assets/images/logo/connect06.png" alt="Fortmatic">
+              <p>Fortmatic</p>
+              <i class="fa-sharp fa-solid fa-check text-primary ms-auto"></i>
+            </li>
+          </ul>
+          <div class="d-none d-md-flex modal-footer justify-content-center border-top-0 pt-0 pb-6">
+            <button type="button" class="btn btn-primary border fs-5 lh-26 text-white px-12 py-2" data-bs-dismiss="modal">連結錢包</button>
+          </div>
+          <div class="d-md-none fixed-bottom">
+            <button class="btn btn-primary border fs-5 lh-26 text-white w-100 py-3" type="button" data-bs-dismiss="modal">連結錢包</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bootstrap瀑布流 -->
+    <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D" crossorigin="anonymous" async></script>
+    
+    <!-- Swiper輪播 -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script>
+      var swiper = new Swiper(".home-swiper", {
+        loop: true,
+        slidesPerView: 1,
+        spaceBetween: 24,
+        centeredSlides: true,
+
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        breakpoints: {
+          768: {
+              slidesPerView: 1
+          },
+          992: {
+              slidesPerView: 3
+          }
+        },
+      });
+
+      var swiper = new Swiper(".recommend-swiper", {
+        slidesPerView: 2,
+        spaceBetween: 24,
+        slidesPerGroup: 4,
+        loop: true,
+        loopFillGroupWithBlank: true,
+
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        breakpoints: {
+          768: {
+              slidesPerView: 2
+          },
+          992: {
+              slidesPerView: 4
+          }
+        },
+      });
+    </script>
+
+    <script src="./assets/js/vendors.js"></script>
+    <script src="./assets/js/all.js"></script>
+  </body>
+
+</html>

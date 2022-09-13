@@ -1,0 +1,567 @@
+---
+title: 藝術品篩選｜NFT藝術家交易平台
+layout: ./app/layout.ejs
+engine: ejs
+---
+
+<main class="container pt-6 pb-10 pt-md-36 pb-md-20">
+  <div class="row">
+    <aside class="d-none d-md-block col-md-3">
+      <div class="border">
+        <div class="accordion" id="accordionPanelsStayOpenExample">
+          <div class="accordion-item border-0">
+            <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+              <button class="accordion-button fw-bold pt-6 pb-0 px-md-6" type="button" data-bs-toggle="collapse" data-bs-target="#filter-collapse1">
+                網路
+              </button>
+            </h2>
+            <div id="filter-collapse1" class="accordion-collapse collapse show">
+              <ul class="accordion-body pt-4 pb-6 px-md-6">
+                <li class="d-flex justify-content-between form-check mb-2 ps-0">
+                  <label class="form-check-label" for="filter-radio1">以太坊</label>
+                  <input class="form-check-input" type="radio" id="filter-radio1" name="radio1">
+                </li>
+                <li class="d-flex justify-content-between form-radio ps-0">
+                  <label class="form-check-label font-noto" for="filter-radio2">BNB 智能鏈</label>
+                  <input class="form-check-input" type="radio" id="filter-radio2" name="radio1">
+                </li>
+              </ul>
+              <div class="border-bottom border-dark"></div>
+            </div>
+          </div>
+        </div>
+        <div class="accordion" id="accordionPanelsStayOpenExample">
+          <div class="accordion-item border-0">
+            <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+              <button class="accordion-button fw-bold pt-6 pb-0 px-md-6" type="button" data-bs-toggle="collapse" data-bs-target="#filter-collapse2">
+                狀態
+              </button>
+            </h2>
+            <div id="filter-collapse2" class="accordion-collapse collapse show">
+              <ul class="accordion-body pt-4 pb-6 px-md-6">
+                <li class="d-flex justify-content-between form-check mb-2 ps-0">
+                  <label class="form-check-label" for="filter-radio3">僅展示</label>
+                  <input class="form-check-input" type="radio" id="filter-radio3" name="radio2">
+                </li>
+                <li class="d-flex justify-content-between form-check ps-0">
+                  <label class="form-check-label" for="filter-radio4">拍賣中</label>
+                  <input class="form-check-input" type="radio" id="filter-radio4" name="radio2">
+                </li>
+              </ul>
+              <div class="border-bottom border-dark"></div>
+            </div>
+          </div>
+        </div>
+        <div class="accordion" id="accordionPanelsStayOpenExample">
+          <div class="accordion-item border-0">
+            <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+              <button class="accordion-button fw-bold pt-6 pb-0 px-md-6" type="button" data-bs-toggle="collapse" data-bs-target="#filter-collapse3">
+                價格
+              </button>
+            </h2>
+            <div id="filter-collapse3" class="accordion-collapse collapse show">
+              <ul class="accordion-body d-flex pt-4 pb-6 px-md-6">
+                <li class="form-check mb-0 me-2 ps-0 w-73px">
+                  <select class="form-select font-noto">
+                    <option selected>ETH</option>
+                    <option value="1">BTC</option>
+                    <option value="2">DOGE</option>
+                  </select>
+                </li>
+                <li class="form-check mb-0 me-2 ps-0">
+                  <input type="text">
+                </li>
+                <li class="font-noto my-auto me-2 ps-0">
+                  －
+                </li>
+                <li class="form-check mb-0 ps-0">
+                  <input type="text">
+                </li>
+              </ul>
+              <div class="border-bottom border-dark"></div>
+            </div>
+          </div>
+        </div>
+        <p class="bg-white text-dark fw-bold pt-6 px-md-6">屬性</p>
+        <div class="accordion" id="accordionPanelsStayOpenExample">
+          <div class="accordion-item border-0">
+            <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+              <button class="accordion-button fw-bold pt-6 pb-0 px-md-6" type="button" data-bs-toggle="collapse" data-bs-target="#filter-collapse4">
+                品種
+              </button>
+            </h2>
+            <div id="filter-collapse4" class="accordion-collapse collapse show">
+              <ul class="accordion-body pt-4 pb-6 px-md-6">
+                <li class="d-flex justify-content-between form-check mb-2 ps-0">
+                  <label class="form-check-label" for="filter-radio5">八哥</label>
+                  <input class="form-check-input" type="radio" id="filter-radio5" name="radio3">
+                </li>
+                <li class="d-flex justify-content-between form-check mb-2 ps-0">
+                  <label class="form-check-label" for="filter-radio6">虎皮鸚鵡</label>
+                  <input class="form-check-input" type="radio" id="filter-radio6" name="radio3">
+                </li>
+                <li class="d-flex justify-content-between form-check mb-2 ps-0">
+                  <label class="form-check-label" for="filter-radio7">太平鳥</label>
+                  <input class="form-check-input" type="radio" id="filter-radio7" name="radio3">
+                </li>
+                <li class="d-flex justify-content-between form-check ps-0">
+                  <label class="form-check-label" for="filter-radio8">畫眉鳥</label>
+                  <input class="form-check-input" type="radio" id="filter-radio8" name="radio3">
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="accordion" id="accordionPanelsStayOpenExample">
+          <div class="accordion-item border-0">
+            <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+              <button class="accordion-button fw-bold pt-6 pb-0 px-md-6" type="button" data-bs-toggle="collapse" data-bs-target="#filter-collapse5">
+                鳥的數量
+              </button>
+            </h2>
+            <div id="filter-collapse5" class="accordion-collapse collapse show">
+              <ul class="accordion-body font-noto pt-4 pb-6 px-md-6">
+                <li class="d-flex justify-content-between form-check mb-2 ps-0">
+                  <label class="form-check-label" for="filter-radio9">1隻</label>
+                  <input class="form-check-input" type="radio" id="filter-radio9" name="radio4">
+                </li>
+                <li class="d-flex justify-content-between form-check mb-2 ps-0">
+                  <label class="form-check-label" for="filter-radio10">2隻</label>
+                  <input class="form-check-input" type="radio" id="filter-radio10" name="radio4">
+                </li>
+                <li class="d-flex justify-content-between form-check mb-2 ps-0">
+                  <label class="form-check-label" for="filter-radio11">3隻</label>
+                  <input class="form-check-input" type="radio" id="filter-radio11" name="radio4">
+                </li>
+                <li class="d-flex justify-content-between form-check mb-2 ps-0">
+                  <label class="form-check-label" for="filter-radio12">4隻</label>
+                  <input class="form-check-input" type="radio" id="filter-radio12" name="radio4">
+                </li>
+                <li class="d-flex justify-content-between form-check ps-0">
+                  <label class="form-check-label" for="filter-radio13">5隻以上</label>
+                  <input class="form-check-input" type="radio" id="filter-radio13" name="radio4">
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="accordion" id="accordionPanelsStayOpenExample">
+          <div class="accordion-item border-0">
+            <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+              <button class="accordion-button fw-bold pt-6 pb-0 px-md-6" type="button" data-bs-toggle="collapse" data-bs-target="#filter-collapse6">
+                是否有花草
+              </button>
+            </h2>
+            <div id="filter-collapse6" class="accordion-collapse collapse show">
+              <ul class="accordion-body pt-4 pb-6 px-md-6">
+                <li class="d-flex justify-content-between form-check mb-2 ps-0">
+                  <label class="form-check-label" for="filter-radio14">是</label>
+                  <input class="form-check-input" type="radio" id="filter-radio14" name="radio5">
+                </li>
+                <li class="d-flex justify-content-between form-check ps-0">
+                  <label class="form-check-label" for="filter-radio15">否</label>
+                  <input class="form-check-input" type="radio" id="filter-radio15" name="radio5">
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="accordion" id="accordionPanelsStayOpenExample">
+          <div class="accordion-item border-0">
+            <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+              <button class="accordion-button fw-bold pt-6 pb-4 px-md-6" type="button" data-bs-toggle="collapse" data-bs-target="#filter-collapse7">
+                鳥的顏色
+              </button>
+            </h2>
+            <div id="filter-collapse7" class="accordion-collapse collapse show">
+              <ul class="accordion-body pt-0 pb-6 px-md-6">
+                <li class="d-flex justify-content-between form-check mb-2 ps-0">
+                  <label class="form-check-label" for="filter-radio16">紅</label>
+                  <input class="form-check-input" type="radio" id="filter-radio16" name="radio6">
+                </li>
+                <li class="d-flex justify-content-between form-check mb-2 ps-0">
+                  <label class="form-check-label" for="filter-radio17">黃</label>
+                  <input class="form-check-input" type="radio" id="filter-radio17" name="radio6">
+                </li>
+                <li class="d-flex justify-content-between form-check mb-2 ps-0">
+                  <label class="form-check-label" for="filter-radio18">藍</label>
+                  <input class="form-check-input" type="radio" id="filter-radio18" name="radio6">
+                </li>
+                <li class="d-flex justify-content-between form-check mb-2 ps-0">
+                  <label class="form-check-label" for="filter-radio19">黑</label>
+                  <input class="form-check-input" type="radio" id="filter-radio19" name="radio6">
+                </li>
+                <li class="d-flex justify-content-between form-check ps-0">
+                  <label class="form-check-label" for="filter-radio20">白</label>
+                  <input class="form-check-input" type="radio" id="filter-radio20" name="radio6">
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </aside>
+    <!-- Modal -->
+    <section class="modal fade p-0" id="filter-condition" tabindex="-1">
+      <div class="modal-dialog modal-fullscreen-md-down">
+        <div class="modal-content">
+          <div class="modal-header bg-white">
+            <span class="h-32px"></span>
+            <h5 class="modal-title" id="exampleModalLabel">篩選條件</h5>
+            <button type="button" class="btn-close mx-0" data-bs-dismiss="modal"></button>
+          </div>
+          <div class="accordion" id="accordionPanelsStayOpenExample">
+            <div class="accordion-item border-0">
+              <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+                <button class="accordion-button fw-bold pt-6 pb-0" type="button" data-bs-toggle="collapse" data-bs-target="#filter-collapse1">
+                  網路
+                </button>
+              </h2>
+              <div id="filter-collapse1" class="accordion-collapse collapse show">
+                <ul class="accordion-body pt-4 pb-6">
+                  <li class="d-flex justify-content-between form-check mb-2 ps-0">
+                    <label class="form-check-label" for="filter-radio1">以太坊</label>
+                    <input class="form-check-input" type="radio" id="filter-radio1" name="radio1">
+                  </li>
+                  <li class="d-flex justify-content-between form-radio ps-0">
+                    <label class="form-check-label font-noto" for="filter-radio2">BNB 智能鏈</label>
+                    <input class="form-check-input" type="radio" id="filter-radio2" name="radio1">
+                  </li>
+                </ul>
+                <div class="border-bottom border-dark mx-3"></div>
+              </div>
+            </div>
+          </div>
+          <div class="accordion" id="accordionPanelsStayOpenExample">
+            <div class="accordion-item border-0">
+              <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+                <button class="accordion-button fw-bold pt-6 pb-0" type="button" data-bs-toggle="collapse" data-bs-target="#filter-collapse2">
+                  狀態
+                </button>
+              </h2>
+              <div id="filter-collapse2" class="accordion-collapse collapse show">
+                <ul class="accordion-body pt-4 pb-6">
+                  <li class="d-flex justify-content-between form-check mb-2 ps-0">
+                    <label class="form-check-label" for="filter-radio3">僅展示</label>
+                    <input class="form-check-input" type="radio" id="filter-radio3" name="radio2">
+                  </li>
+                  <li class="d-flex justify-content-between form-check ps-0">
+                    <label class="form-check-label" for="filter-radio4">拍賣中</label>
+                    <input class="form-check-input" type="radio" id="filter-radio4" name="radio2">
+                  </li>
+                </ul>
+                <div class="border-bottom border-dark mx-3"></div>
+              </div>
+            </div>
+          </div>
+          <div class="accordion" id="accordionPanelsStayOpenExample">
+            <div class="accordion-item border-0">
+              <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+                <button class="accordion-button fw-bold pt-6 pb-0" type="button" data-bs-toggle="collapse" data-bs-target="#filter-collapse3">
+                  價格
+                </button>
+              </h2>
+              <div id="filter-collapse3" class="accordion-collapse collapse show">
+                <ul class="accordion-body d-flex pt-4 pb-6">
+                  <li class="form-check mb-0 me-2 ps-0 w-73px">
+                    <select class="form-select font-noto">
+                      <option selected>ETH</option>
+                      <option value="1">BTC</option>
+                      <option value="2">DOGE</option>
+                    </select>
+                  </li>
+                  <li class="form-check mb-0 me-2 ps-0">
+                    <input type="text">
+                  </li>
+                  <li class="font-noto my-auto me-2 ps-0">
+                    －
+                  </li>
+                  <li class="form-check mb-0 ps-0">
+                    <input type="text">
+                  </li>
+                </ul>
+                <div class="border-bottom border-dark mx-3"></div>
+              </div>
+            </div>
+          </div>
+          <p class="bg-white text-dark fw-bold pt-6 ps-4">屬性</p>
+          <div class="accordion" id="accordionPanelsStayOpenExample">
+            <div class="accordion-item border-0">
+              <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+                <button class="accordion-button fw-bold pt-6 pb-0" type="button" data-bs-toggle="collapse" data-bs-target="#filter-collapse4">
+                  品種
+                </button>
+              </h2>
+              <div id="filter-collapse4" class="accordion-collapse collapse show">
+                <ul class="accordion-body pt-4 pb-6">
+                  <li class="d-flex justify-content-between form-check mb-2 ps-0">
+                    <label class="form-check-label" for="filter-radio5">八哥</label>
+                    <input class="form-check-input" type="radio" id="filter-radio5" name="radio3">
+                  </li>
+                  <li class="d-flex justify-content-between form-check mb-2 ps-0">
+                    <label class="form-check-label" for="filter-radio6">虎皮鸚鵡</label>
+                    <input class="form-check-input" type="radio" id="filter-radio6" name="radio3">
+                  </li>
+                  <li class="d-flex justify-content-between form-check mb-2 ps-0">
+                    <label class="form-check-label" for="filter-radio7">太平鳥</label>
+                    <input class="form-check-input" type="radio" id="filter-radio7" name="radio3">
+                  </li>
+                  <li class="d-flex justify-content-between form-check ps-0">
+                    <label class="form-check-label" for="filter-radio8">畫眉鳥</label>
+                    <input class="form-check-input" type="radio" id="filter-radio8" name="radio3">
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="accordion" id="accordionPanelsStayOpenExample">
+            <div class="accordion-item border-0">
+              <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+                <button class="accordion-button fw-bold pt-6 pb-0" type="button" data-bs-toggle="collapse" data-bs-target="#filter-collapse5">
+                  鳥的數量
+                </button>
+              </h2>
+              <div id="filter-collapse5" class="accordion-collapse collapse show">
+                <ul class="accordion-body font-noto pt-4 pb-6">
+                  <li class="d-flex justify-content-between form-check mb-2 ps-0">
+                    <label class="form-check-label" for="filter-radio9">1隻</label>
+                    <input class="form-check-input" type="radio" id="filter-radio9" name="radio4">
+                  </li>
+                  <li class="d-flex justify-content-between form-check mb-2 ps-0">
+                    <label class="form-check-label" for="filter-radio10">2隻</label>
+                    <input class="form-check-input" type="radio" id="filter-radio10" name="radio4">
+                  </li>
+                  <li class="d-flex justify-content-between form-check mb-2 ps-0">
+                    <label class="form-check-label" for="filter-radio11">3隻</label>
+                    <input class="form-check-input" type="radio" id="filter-radio11" name="radio4">
+                  </li>
+                  <li class="d-flex justify-content-between form-check mb-2 ps-0">
+                    <label class="form-check-label" for="filter-radio12">4隻</label>
+                    <input class="form-check-input" type="radio" id="filter-radio12" name="radio4">
+                  </li>
+                  <li class="d-flex justify-content-between form-check ps-0">
+                    <label class="form-check-label" for="filter-radio13">5隻以上</label>
+                    <input class="form-check-input" type="radio" id="filter-radio13" name="radio4">
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="accordion" id="accordionPanelsStayOpenExample">
+            <div class="accordion-item border-0">
+              <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+                <button class="accordion-button fw-bold pt-6 pb-0" type="button" data-bs-toggle="collapse" data-bs-target="#filter-collapse6">
+                  是否有花草
+                </button>
+              </h2>
+              <div id="filter-collapse6" class="accordion-collapse collapse show">
+                <ul class="accordion-body pt-4 pb-6">
+                  <li class="d-flex justify-content-between form-check mb-2 ps-0">
+                    <label class="form-check-label" for="filter-radio14">是</label>
+                    <input class="form-check-input" type="radio" id="filter-radio14" name="radio5">
+                  </li>
+                  <li class="d-flex justify-content-between form-check ps-0">
+                    <label class="form-check-label" for="filter-radio15">否</label>
+                    <input class="form-check-input" type="radio" id="filter-radio15" name="radio5">
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="accordion" id="accordionPanelsStayOpenExample">
+            <div class="accordion-item border-0">
+              <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+                <button class="accordion-button fw-bold pt-6 pb-4" type="button" data-bs-toggle="collapse" data-bs-target="#filter-collapse7">
+                  鳥的顏色
+                </button>
+              </h2>
+              <div id="filter-collapse7" class="accordion-collapse collapse show">
+                <ul class="accordion-body pt-0 pb-18">
+                  <li class="d-flex justify-content-between form-check mb-2 ps-0">
+                    <label class="form-check-label" for="filter-radio16">紅</label>
+                    <input class="form-check-input" type="radio" id="filter-radio16" name="radio6">
+                  </li>
+                  <li class="d-flex justify-content-between form-check mb-2 ps-0">
+                    <label class="form-check-label" for="filter-radio17">黃</label>
+                    <input class="form-check-input" type="radio" id="filter-radio17" name="radio6">
+                  </li>
+                  <li class="d-flex justify-content-between form-check mb-2 ps-0">
+                    <label class="form-check-label" for="filter-radio18">藍</label>
+                    <input class="form-check-input" type="radio" id="filter-radio18" name="radio6">
+                  </li>
+                  <li class="d-flex justify-content-between form-check mb-2 ps-0">
+                    <label class="form-check-label" for="filter-radio19">黑</label>
+                    <input class="form-check-input" type="radio" id="filter-radio19" name="radio6">
+                  </li>
+                  <li class="d-flex justify-content-between form-check ps-0">
+                    <label class="form-check-label" for="filter-radio20">白</label>
+                    <input class="form-check-input" type="radio" id="filter-radio20" name="radio6">
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <button class="btn btn-primary border text-white w-100 fixed-bottom py-3" type="button" data-bs-dismiss="modal">確認</button>
+        </div>
+      </div>
+    </section>
+    <section class="col-6 d-md-none fixed-bottom mx-auto mb-4">
+      <button class="btn bg-black text-white w-100 py-2" type="button" data-bs-toggle="modal" data-bs-target="#filter-condition">篩選條件</button>
+    </section>
+    <section class="col-md-9">
+      <section class="d-md-flex justify-content-md-between align-items-md-end mb-10">
+        <div class="w-sm-100 w-md-54 mb-4 mb-md-0">
+          <div class="d-flex align-items-center mb-1">
+            <img class="h-32px rounded-circle me-4" src="assets/images/artist01.jpg" alt="會員頭像">
+            <p>Michael</p>
+          </div>
+          <h2 class="fs-2 lh-46 fw-bold mb-2">我家外面的鳥</h2>
+          <p>家門前每天都有不同的小鳥，大多數的小鳥都有特殊能力，特殊能力是什麼我就不說了，希望大家能從作品感受到小鳥的快樂。</p>
+        </div>
+        <div class="w-sm-100 w-md-43">
+          <ul class="d-flex bg-white border">
+            <li class="position-relative px-2 py-4">
+              <div class="position-absolute top-0 end-0 top-line"></div>
+              <div class="position-absolute bottom-0 end-0 bottom-line"></div>
+              <div class="filter-item text-center">
+                <p class="fs-7 lh-20 fs-md-6 lh-md-24 mb-1 mb-md-2">項目</p>
+                <p class="fs-4 lh-32 fs-md-3">6.4 k</p>
+              </div>
+            </li>
+            <li class="position-relative px-2 py-4">
+              <div class="position-absolute top-0 end-0 top-line"></div>
+              <div class="position-absolute bottom-0 end-0 bottom-line"></div>
+              <div class="filter-item text-center">
+                <p class="fs-7 lh-20 fs-md-6 lh-md-24 mb-1 mb-md-2">擁有者</p>
+                <p class="fs-4 lh-32 fs-md-3">2.5 k</p>
+              </div>
+            </li>
+            <li class="position-relative px-2 py-4">
+              <div class="position-absolute top-0 end-0 top-line"></div>
+              <div class="position-absolute bottom-0 end-0 bottom-line"></div>
+              <div class="filter-item text-center">
+                <p class="fs-7 lh-20 fs-md-6 lh-md-24 mb-1 mb-md-2">底價</p>
+                <p class="fs-4 lh-32 fs-md-3">1.38 k</p>
+              </div>
+            </li>
+            <li class="px-2 py-4">
+              <div class="filter-item text-center">
+                <p class="fs-7 lh-20 fs-md-6 lh-md-24 mb-1 mb-md-2">總額</p>
+                <p class="fs-4 lh-32 fs-md-3">2.8 k</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section>
+        <div class="text-end mb-6 mb-md-10">
+          <button class="btn bg-white border px-6 py-2" type="button">最新上架<i class="fa-solid fa-sort ps-2"></i></button>
+        </div>
+        <div class="row" data-masonry='{"percentPosition": true ,"horizontalOrder": true}'>
+          <div class="col-6 col-md-4 mb-4 mb-md-12">
+            <div class="artwork-card bg-white mb-2 p-2 mb-md-4 p-md-6">
+              <div class="position-relative">
+                <img class="h-md-254px" src="assets/images/art20.jpg" alt="這兩隻也太像企鵝了吧">
+                <div class="overlay">
+                  <p class="d-md-none fs-5 text-white">MORE</p>
+                  <span class="d-md-none triangle"></span>
+                  <div class="d-none d-md-flex flex-md-column border border-white h-100 p-md-4">
+                    <p class="fw-bold text-white mb-md-4">藝術形式的表達是普世文化通則之一</p>
+                    <p class="text-white lh-17 me-md-auto"><i class="fa-brands fa-ethereum me-2"></i>300</p>
+                    <button class="btn btn-triangle btn-white fs-5 lh-19 mt-md-auto ms-md-auto" type="button">MORE</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <h4 class="fs-7 lh-20 fs-md-6 lh-md-24 fw-bold border-md-bottom pb-2 ps-2 pb-md-4 ps-md-0">這兩隻也太像企鵝了吧</h4>
+          </div>
+          <div class="col-6 col-md-4 mb-4 mb-md-12">
+            <div class="artwork-card bg-white mb-2 p-2 mb-md-4 p-md-6">
+              <div class="position-relative">
+                <img class="h-md-327px" src="assets/images/art21.jpg" alt="兩情相悅">
+                <div class="overlay">
+                  <p class="d-md-none fs-5 text-white">MORE</p>
+                  <span class="d-md-none triangle"></span>
+                  <div class="d-none d-md-flex flex-md-column border border-white h-100 p-md-4">
+                    <p class="font-noto fw-bold text-white mb-md-4">3/14情人節外面剛好有兩隻鳥，也在過情人節。</p>
+                    <p class="text-white lh-17 me-md-auto"><i class="fa-brands fa-ethereum me-2"></i>300</p>
+                    <a class="btn btn-triangle btn-white fs-5 lh-19 mt-md-auto ms-md-auto" href="recommend.html">MORE</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <h4 class="fs-7 lh-20 fs-md-6 lh-md-24 fw-bold border-md-bottom pb-2 ps-2 pb-md-4 ps-md-0">兩情相悅</h4>
+          </div>
+          <div class="col-6 col-md-4 mb-4 mb-md-12">
+            <div class="artwork-card bg-white mb-2 p-2 mb-md-4 p-md-6">
+              <div class="position-relative">
+                <img class="h-md-255px" src="assets/images/art22.jpg" alt="群聚的小鳥們">
+                <div class="overlay">
+                  <p class="d-md-none fs-5 text-white">MORE</p>
+                  <span class="d-md-none triangle"></span>
+                  <div class="d-none d-md-flex flex-md-column border border-white h-100 p-md-4">
+                    <p class="fw-bold text-white mb-md-4">藝術形式的表達是普世文化通則之一</p>
+                    <p class="text-white lh-17 me-md-auto"><i class="fa-brands fa-ethereum me-2"></i>300</p>
+                    <button class="btn btn-triangle btn-white fs-5 lh-19 mt-md-auto ms-md-auto" type="button">MORE</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <h4 class="fs-7 lh-20 fs-md-6 lh-md-24 fw-bold border-md-bottom pb-2 ps-2 pb-md-4 ps-md-0">群聚的小鳥們</h4>
+          </div>
+          <div class="col-6 col-md-4 mb-4 mb-md-0">
+            <div class="artwork-card bg-white mb-2 p-2 mb-md-4 p-md-6">
+              <div class="position-relative">
+                <img class="h-md-254px" src="assets/images/art23.jpg" alt="與你分享的快樂勝過獨自擁有">
+                <div class="overlay">
+                  <p class="d-md-none fs-5 text-white">MORE</p>
+                  <span class="d-md-none triangle"></span>
+                  <div class="d-none d-md-flex flex-md-column border border-white h-100 p-md-4">
+                    <p class="fw-bold text-white mb-md-4">藝術形式的表達是普世文化通則之一</p>
+                    <p class="text-white lh-17 me-md-auto"><i class="fa-brands fa-ethereum me-2"></i>300</p>
+                    <button class="btn btn-triangle btn-white fs-5 lh-19 mt-md-auto ms-md-auto" type="button">MORE</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <h4 class="fs-7 lh-20 fs-md-6 lh-md-24 fw-bold border-md-bottom pb-2 ps-2 pb-md-4 ps-md-0">與你分享的快樂勝過獨自擁有</h4>
+          </div>
+          <div class="col-6 col-md-4 mb-4 mb-md-0">
+            <div class="artwork-card bg-white mb-2 p-2 mb-md-4 p-md-6">
+              <div class="position-relative">
+                <img class="h-md-368px" src="assets/images/art24.jpg" alt="會唱metal的鳥">
+                <div class="overlay">
+                  <p class="d-md-none fs-5 text-white">MORE</p>
+                  <span class="d-md-none triangle"></span>
+                  <div class="d-none d-md-flex flex-md-column border border-white h-100 p-md-4">
+                    <p class="fw-bold text-white mb-md-4">藝術形式的表達是普世文化通則之一</p>
+                    <p class="text-white lh-17 me-md-auto"><i class="fa-brands fa-ethereum me-2"></i>300</p>
+                    <button class="btn btn-triangle btn-white fs-5 lh-19 mt-md-auto ms-md-auto" type="button">MORE</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <h4 class="fs-7 lh-20 fs-md-6 lh-md-24 fw-bold font-noto border-md-bottom pb-2 ps-2 pb-md-4 ps-md-0">會唱metal的鳥</h4>
+          </div>
+          <div class="col-6 col-md-4 mb-4 mb-md-0">
+            <div class="artwork-card bg-white mb-2 p-2 mb-md-4 p-md-6">
+              <div class="position-relative">
+                <img class="h-md-396px" src="assets/images/art25.jpg" alt="一大一小兩個恰恰好">
+                <div class="overlay">
+                  <p class="d-md-none fs-5 text-white">MORE</p>
+                  <span class="d-md-none triangle"></span>
+                  <div class="d-none d-md-flex flex-md-column border border-white h-100 p-md-4">
+                    <p class="fw-bold text-white mb-md-4">藝術形式的表達是普世文化通則之一</p>
+                    <p class="text-white lh-17 me-md-auto"><i class="fa-brands fa-ethereum me-2"></i>300</p>
+                    <button class="btn btn-triangle btn-white fs-5 lh-19 mt-md-auto ms-md-auto" type="button">MORE</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <h4 class="fs-7 lh-20 fs-md-6 lh-md-24 fw-bold font-noto border-md-bottom pb-2 ps-2 pb-md-4 ps-md-0">一大一小兩個恰恰好</h4>
+          </div>
+        </div>
+      </section>
+    </section>
+  </div>
+</main>

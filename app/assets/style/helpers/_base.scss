@@ -1,0 +1,27 @@
+// 全站設定
+*,*::before,*::after {
+  box-sizing: border-box;
+}
+img {
+  max-width: 100%;
+  height: auto ;
+  vertical-align: middle;
+}
+body {
+  background-color: #F0F0F0;
+}
+a {
+  color: black;
+  text-decoration: none;
+  &:hover {
+    color: $primary;
+  }
+}
+ul {
+  list-style: none;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+button {
+  line-height: 0;
+}

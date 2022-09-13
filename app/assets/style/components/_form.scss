@@ -1,0 +1,33 @@
+.form-check {
+  &-input {
+    border-color: black;
+    &:checked {
+      background-color: black;
+      border-color: black;
+      &[type="radio"] {
+        background-image: url("../images/done_white_18dp.svg");
+      }
+    }
+    &:focus {
+      border-color: black;
+      box-shadow: none;
+    }
+    &[type="radio"] {
+      border-radius: 0;
+    }
+  }
+  & input[type="text"] {
+    width: 73px;
+    border: 1px solid black;
+    padding: 6px 0;
+    
+  }
+}
+.form-select {
+  border-color: black;
+  padding: 6px 18px 6px 8px;
+  &:focus {
+    border-color: black;
+    box-shadow: none;
+  }
+}

@@ -1,0 +1,78 @@
+.navbar {
+  &-brand {
+    display: block;
+    background: url(../images/logo.svg) no-repeat;
+    background-size: 85px 18px;
+    width: 85px;
+    height: 18px;
+    text-indent: 101%;
+    overflow: hidden;
+    white-space: nowrap;
+    @media (min-width:768px) {
+      background-size: 190px 40px;
+      width: 190px;
+      height: 40px;
+    };
+  }
+  &-toggler {
+    line-height: 18px;
+    & i {
+      width: 21px;
+      line-height: 16px;
+    }
+  }
+  &-collapse {
+    @media (min-width:768px) {
+      display: none!important;
+    };
+  }
+  &-nav {
+    @media (max-width:767px) {
+      display: block;
+      max-height: 0px;
+      overflow: hidden;
+      transition: max-height 1s;
+      position: absolute;
+      z-index: 2;
+      top: 51px;
+      left: 0;
+      right: 0;
+      background-color: $white;
+      text-align: center;
+      padding: 0 12px;
+    };
+    & i:hover {
+      color: $primary;
+    }
+  }
+}
+.navbar-nav_show .navbar-nav {
+  max-height: 228px;
+}
+.close {
+  display: none;
+}
+.searchBar {
+  width: 100%;
+  @media (min-width:768px) {
+    width: 432px;
+  };
+}
+.line {
+  @media (min-width:768px) {
+    content: "";
+    display: block;
+    width: 1px;
+    height: 104px;
+    background-color: black;
+  };
+}
+.fixed-md-top {
+  @media (min-width:768px) {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+  }
+}

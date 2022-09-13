@@ -1,0 +1,23 @@
+.triangle-md {
+  position: relative;
+  &-start {
+    &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-top: 24px solid black;
+    border-right: 24px solid transparent;
+    }
+  }
+  &-end {
+    &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-top: 24px solid black;
+    border-left: 24px solid transparent;
+    }
+  }
+}

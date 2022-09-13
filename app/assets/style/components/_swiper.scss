@@ -1,0 +1,93 @@
+.home-swiper {
+  overflow: hidden;
+  & .swiper-pagination {
+    position: unset;
+    width: auto;
+    .swiper-pagination-bullet {
+      background-color: black;
+      opacity: initial;
+      border-radius: 0;
+      &-active {
+        width: 16px;
+        background-color: $primary;
+      }
+    }
+  }
+  & .swiper-slide {
+    & img {
+      filter: grayscale(100%);
+    }
+    &-active {
+      & img {
+        filter: grayscale(0);
+      }
+      @media (min-width:768px) {
+        width: 636px !important;
+      }
+      & .artist-title {
+        display: block;
+      }
+      & .artist-btn {
+        display: block;
+        @media (max-width:768px) {
+          right: 8px;
+          bottom: 120px;
+        }
+      }
+      & .artist-content {
+        display: block;
+        @media (max-width:768px) {
+          position: unset;
+          width: 100%;
+          margin-top: 16px;
+        }
+      }
+    }
+    @media (min-width:768px) {
+      &-prev{
+        width: 306px !important;
+      }
+      &-next{
+        width: 306px !important;
+      }
+    }
+  }
+}
+.artist {
+  &-title {
+    display: none;
+    position: absolute;
+    top: 24px;
+    left: 24px;
+  }
+  &-content {
+    display: none;
+    position: absolute;
+    bottom: 24px;
+    left: 24px;
+    width: 307px;
+    background-color: rgba(255,255,255,.85);
+  }
+  &-btn {
+    display: none;
+    position: absolute;
+    right: 24px;
+    bottom: 24px;
+  }
+}
+.recommend-swiper {
+  overflow: hidden;
+  & .swiper-pagination {
+    position: unset;
+    width: auto;
+    .swiper-pagination-bullet {
+      background-color: black;
+      opacity: initial;
+      border-radius: 0;
+      &-active {
+        width: 16px;
+        background-color: $primary;
+      }
+    }
+  }
+}
